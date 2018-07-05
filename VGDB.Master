@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="VGDB.master.cs" Inherits="VGDB.VGDB" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+
+<div id="Container">
+    <div id="Header">
+        <ul class ="HeaderMenu">
+            <li class="HeaderMenuItem"><a href="Home.aspx">Home</a></li>
+            <li class="HeaderMenuItem"><a href="GamesPage.aspx">Games</a></li>
+            <li class="HeaderMenuItem"><a href="PlatformPage.aspx">Platforms</a></li>
+            <li class="HeaderMenuItem"><a href="PublisherPage.aspx">Publishers</a></li>
+            <li class="HeaderMenuItem"><a href="DeveloperPage.aspx">Developers</a></li>
+            <li class="HeaderMenuItem"><a href="Login.aspx"><asp:Label ID="LBLLogin" runat="server" Text="Login"></asp:Label></a></li>
+        </ul>
+    </div>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="Content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+</div>
+
+</body>
+</html>
